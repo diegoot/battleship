@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
-import {initGame, cellClicked, retryClicked, flagGameOver, flagGameComplete} from 'redux/actions/game';
+import {initGame, cellClicked, flagGameOver, flagGameComplete} from 'redux/actions/game';
 import GameBoard from 'components/presentational/game-page/GameBoard';
 import GameLoader from 'components/presentational/game-page/GameLoader';
 import GameHeader from 'components/presentational/game-page/GameHeader';
@@ -32,7 +32,7 @@ class GamePage extends React.Component {
   handleRetryClick() {
     const {dispatch, attempts} = this.props;
 
-    dispatch(retryClicked(attempts));
+    dispatch(initGame(attempts));
   }
 
   componentDidUpdate() {

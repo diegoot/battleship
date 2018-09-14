@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import {setup} from 'redux/actions/setup';
 import SetupForm from 'components/presentational/setup-page/SetupForm';
 
-class SetupPage extends React.Component {
+export class SetupPage extends React.Component {
   constructor(props) {
     super(props);
 

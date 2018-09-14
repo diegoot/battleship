@@ -8,7 +8,7 @@ export const initGame = attempts =>
       attempts
     });
 
-    initBoard().then(board =>
+    return initBoard().then(board =>
       dispatch({
         type: actionTypes.INIT_GAME_END,
         board,
@@ -35,18 +35,3 @@ export const flagGameComplete = () => {
     type: actionTypes.FLAG_GAME_COMPLETE
   };
 }
-
-export const retryClicked = attempts =>
-  dispatch => {
-    dispatch({
-      type: actionTypes.RETRY_CLICKED_START,
-      attempts,
-    });
-
-    initBoard().then(board =>
-      dispatch({
-        type: actionTypes.RETRY_CLICKED_END,
-        board,
-      })
-    );
-  }

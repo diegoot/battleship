@@ -1,14 +1,9 @@
-import {INIT_GAME_START, INIT_GAME_END, CELL_CLICKED, FLAG_GAME_OVER, FLAG_GAME_COMPLETE, RETRY_CLICKED_START, RETRY_CLICKED_END} from '../actions/actionTypes';
+import {INIT_GAME_START, INIT_GAME_END, CELL_CLICKED, FLAG_GAME_OVER, FLAG_GAME_COMPLETE} from '../actions/actionTypes';
 import initialState from './initialState';
 
-const setup = (state = initialState.game, action) => {
+const game = (state = initialState.game, action) => {
   switch (action.type) {
     case INIT_GAME_START:
-      return Object.assign({}, state, {
-        isInitializing: true,
-        attemptsLeft: action.attempts
-      });
-    case RETRY_CLICKED_START:
       return Object.assign({}, state, {
         isInitializing: true,
         isOver: false,
@@ -16,11 +11,6 @@ const setup = (state = initialState.game, action) => {
         attemptsLeft: action.attempts,
       });
     case INIT_GAME_END:
-      return Object.assign({}, state, {
-        isInitializing: false,
-        board: action.board,
-      });
-    case RETRY_CLICKED_END:
       return Object.assign({}, state, {
         isInitializing: false,
         board: action.board,
@@ -49,4 +39,4 @@ const setup = (state = initialState.game, action) => {
   }
 }
 
-export default setup;
+export default game;
