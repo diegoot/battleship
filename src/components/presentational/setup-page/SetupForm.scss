@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) {
+  .setup-form {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.setup-form {
+  &__title {
+    text-align: center;
+  }
+
+  &__label {
+    font-weight: bold;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    background-color: #CCC;
+    border-radius: 10px;
+  }
+
+  &__row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__control {
+    flex: 1;
+    margin-left: 10px;
+  }
+}

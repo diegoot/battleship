@@ -1,0 +1,23 @@
+.game-footer {
+  display: flex;
+  margin: 10px auto;
+  padding: 0 10px;
+
+  &--visible {
+    display: flex;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &__title {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__nav {
+    line-height: 2em;
+  }
+}

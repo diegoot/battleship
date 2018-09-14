@@ -1,0 +1,35 @@
+.game-ended {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+
+  &--visible {
+    display: block;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  &__main-text {
+    color: #FF0000;
+    font-size: 4em;
+    margin-bottom: 0;
+    margin-top: 2em;
+  }
+
+  &__main-text--success {
+    color: #00FF00;
+  }
+
+  &__secondary-text {
+    color: #FFFFFF;
+    font-size: 1.5em;
+    margin: 0;
+    cursor: pointer;
+    display: inline;
+  }
+}

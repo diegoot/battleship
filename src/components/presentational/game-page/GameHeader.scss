@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+  .game-header {
+    display: flex;
+    margin: 21px auto;
+    padding: 0 10px;
+    width: 50%;
+  }
+}
+
+.game-header {
+  display: flex;
+  margin: 21px auto;
+  padding: 0 10px;
+  
+  &--visible {
+    display: flex;
+  }
+  
+  &--hidden {
+    display: none;
+  }
+  
+  &__title {
+    flex: 1;
+    margin: 0;
+  }
+  
+  &__nav {
+    line-height: 2em;
+    margin-left: 10px;
+  }
+}

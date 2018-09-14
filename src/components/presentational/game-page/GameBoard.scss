@@ -1,0 +1,52 @@
+$black-color: #000;
+$border-thickness: 1px;
+
+.game-board {
+  margin: 0 10px;
+
+  &__row {
+    display: flex;
+  }
+
+  &__cell {
+    flex: 1;
+    border-right: $border-thickness solid $black-color;
+    border-bottom: $border-thickness solid $black-color;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--corner {
+      border-right: none;
+      border-bottom: none;
+    }
+
+    &--top-title {
+      border-right: none;
+    }
+
+    &--left-title {
+      border-bottom: none;
+    }
+
+    &--sunk {
+      background-color: #0000FF;
+    }
+  }
+
+  &--visible {
+    display: block;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .game-board {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
