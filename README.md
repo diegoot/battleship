@@ -10,6 +10,16 @@ Some of the libraries/tools used on it are:
 - [redux-thunk](https://github.com/reduxjs/redux-thunk)
 - [classnames](https://github.com/JedWatson/classnames)
 
+# Project goal
+
+This project is a webversion of the well known battleship game. This version is for a single player.
+
+You need to sink all the ships on the board before you run out of attemps left.
+
+There are 10 hidden ships in total. If you click a cell and you get an X it is because you missed to hit a ship, if you get a ship is because you hit one ship (or a part of it).
+
+Sunk ships have blue background.
+
 # How to run the project
 
 - Clone this repository.
@@ -69,10 +79,10 @@ With a different configuration it might be harder to place all the ships (or eve
 
 This project is responsive, so you can test the live example directly from your mobile phone.
 
-# Live example
+# Live demo
 
 [Here](http://hungry-lace.surge.sh).
 
 # Known issues
 
-- Reloading the page might have some issues, specially on the live example. I need to research on it a bit.
+- Reloading the page might have some issues, specially on the live demo. I need to research on it a bit.
