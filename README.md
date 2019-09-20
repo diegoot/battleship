@@ -10,6 +10,8 @@ Some of the libraries/tools used on it are:
 - [redux-thunk](https://github.com/reduxjs/redux-thunk)
 - [classnames](https://github.com/JedWatson/classnames)
 
+#### IMPORTANT: This is the output of an interview test. This might need improvements and/or have incomplete features given the time I had to do it
+
 # Project goal
 
 This project is a webversion of the well known battleship game. This version is for a single player.
